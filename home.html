@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        div {
+            width: 100%;
+            height: 100vh;
+            margin: 0px;
+            padding:0;
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 54px auto;
+            grid-template-areas: "nav"
+            "main";
+        }
+        nav {
+            background-image: url(./img/insta-nav.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+            grid-area: nav;
+        }
+        main {
+            background-image: url(./img/insta-main.png);
+            grid-area: main;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    
+<div>
+    <nav></nav>
+    <main></main>
+</div>
+
+</body>
+</html>

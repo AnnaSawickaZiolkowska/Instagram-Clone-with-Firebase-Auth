@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="css/stylegrid.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/instagram-ico_16x16.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="grid">
+
+        <section class="banner">
+            <div><img class="banner-img" src="img/banner-1.png" alt="">
+                <img class="slider"></img>
+
+            </div>
+        </section>
+
+        <section class="login">
+            <section class="form-box">
+                <!-- <h1 class="form-box__logo"></h1> -->
+                <div class="logo">
+                    <img class="form-box__logo" src="./img/instagram-text.png" alt="">
+                </div>
+                <form class="form-box__form form" id="logInForm">
+                    <input class="form__input" type="email" name="username" id="username" max="75"
+                        placeholder="Numer telefonu, nazwa urzytkownika lub adrese-mail">
+                    <input class="form__input" type="password" name="password" id="password" placeholder="Hasło">
+                    <button class="form-box__button" type="submit">Zaloguj się</button>
+                    <div class="form-box__span-contener">
+                        <span class="form-box__span">LUB</span>
+                    </div>
+                    <div class="form-box__facebook">
+                        <span class="form-box__facebook-logo"><img src="img/facebook-logo.png" alt=""></span>
+                        <span class="form-box__facebook-span">Zaloguj się przez Facebooka</span>
+                    </div>
+                    <a class="form-box__link">Nie pamiętasz hasła?</a>
+                </form>
+            </section>
+
+            <div class="box">
+                <p class="box__register" id="box__register-signup">Nie masz konta?<a href="">Zarejestruj się</a></p>
+            </div>
+
+            <div class="box-app">
+                <p class="box-app__paragraf">Pobierz aplikację</p>
+                <div class="box-app__img">
+                    <img src="img/app store.png" alt="">
+                    <img src="img/google-play.png" alt="">
+                </div>
+            </div>
+        </section>
+
+       <section class="modal modal__hidden">
+        <section class="signUp">
+            <section class="form-box">
+                <h1 class="form-box__logo"></h1>
+                <form class="form-box__form form" id="signUpForm">
+                    <input class="form__input" type="email" name="username" id="usernameUp" max="75"
+                        placeholder="Numer telefonu, nazwa urzytkownika lub adrese-mail">
+                    <input class="form__input" type="password" name="password" id="passwordUp" placeholder="Hasło">
+                    <button class="form-box__button" type="submit">Zarejestruj się</button>
+                    <div class="form-box__span-contener">
+                        <span class="form-box__span">LUB</span>
+                    </div>
+                    <div class="form-box__facebook">
+                        <span class="form-box__facebook-logo"><img src="img/facebook-logo.png" alt=""></span>
+                        <span class="form-box__facebook-span">Zaloguj się przez Facebooka</span>
+                    </div>
+                    <a class="form-box__link">Nie pamiętasz hasła?</a>
+                </form>
+            </section>
+            <div class="box">
+                <p class="box__register"id="box__register-logIn">Nie masz konta?<a href="">Zaloguj się</a></p>
+            </div>
+
+            <div class="box-app">
+                <p class="box-app__paragraf">Pobierz aplikację</p>
+                <div class="box-app__img">
+                    <img src="img/app store.png" alt="">
+                    <img src="img/google-play.png" alt="">
+                </div>
+            </div>
+        </section>
+       </section>
+
+
+        <footer class="footer">
+            <div class="footer__first-line">
+                <p>Informacje</p>
+                <p>Blog</p>
+                <p>Praca</p>
+                <p>Pomoc</p>
+                <p>API</p>
+                <p>Prywatność</p>
+                <p>Regulamin</p>
+                <p>Najpopularniejsze konta</p>
+                <p>Hasztagi</p>
+                <p>Lokalizacje</p>
+            </div>
+            <div class="footer__second-line">
+                <p>Uroda</p>
+                <p>Taniec i występy</p>
+                <p>Fitness</p>
+                <p>Jedzenie i napoje</p>
+                <p>Dom i ogród</p>
+                <p>Muzyka</p>
+                <p>Sztuki wizualne</p>
+            </div>
+            <div class="footer__theerd-line">
+                <p>Polski<i class="fa fa-angle-down"></i></p>
+                <p>© 2021 Instagram Facebooka</p>
+            </div>
+        </footer>
+        <!-- <section class="grid-container">
+        
+
+       
+
+        
+    </section> -->
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+    <script src="./js/firebaseConfig.js"></script>
+    <script src="./js/main.js" type="module"></script>
+</body>
+
+</html>
